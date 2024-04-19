@@ -1,0 +1,77 @@
+*{
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+}
+
+@font-face {
+    font-family: 'Minecraft 1.1';
+    src: URL('fonts/Minecraft_11.ttf') format('truetype');
+  }
+*{
+    font-family: 'Minecraft 1.1';
+}
+
+
+.dirt{
+    background-image: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ), url(dirt.jpg);
+    background-repeat: repeat;
+}
+.stone{
+    background-image: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ),  url(stone.png);
+    background-repeat: repeat;
+}
+
+
+h1{
+    font-size: 40px;
+}
+.center{
+    text-align: justify !important;
+    width: 900px;
+}
+main{
+    padding-bottom: 200px;
+}
+#Information{
+    margin-top: 50px;
+    color:lightsteelblue;
+}
+.secret{
+    display: none;
+    color: brown;
+}
+h3{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+@media (min-width: 680px){
+    .secret{
+        display: block;
+    }
+}
+@media (min-width: 690px){
+    .secret{
+        display: none;
+    }
+}
+@keyframes qwerty {
+    0%{}
+    50%{
+        transform: rotate(180deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+a{
+    color: aqua;
+    text-decoration: none;
+}
+.image:hover{
+    animation: qwerty 3s linear infinite;
+}
+
+.ul { list-style: none; }
+button{
+    color: aqua;
+}

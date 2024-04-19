@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href="asd.css">
+    <script defer>
+        window.addEventListener("resize", function () {
+            // Function to call when window size changes
+            yourFunction();
+        });
+    
+        function yourFunction() {
+            let fs1 = document.getElementById("frameset1")
+            // Check if the window is in landscape or portrait mode
+            if (window.innerWidth > window.innerHeight) {
+                console.log("Landscape orientation");
+                fs1.setAttribute('rows', '');
+                fs1.setAttribute('cols', '500px, *');
+                // Your landscape orientation logic here
+            } else {
+                console.log("Portrait orientation");
+                fs1.setAttribute('cols', '');
+                fs1.setAttribute('rows', '300, *');
+                // Your portrait orientation logic here
+            }
+        }
+    
+    
+    
+    </script>
+</head>
+<frameset id="frameset1" cols="500px, *" border="10px">
+    <frame src="a.html">
+        <frame src="lololoshka.html" name="frame">
+</frameset>
+
+
+
+</html>
