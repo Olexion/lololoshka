@@ -5,7 +5,7 @@
 
 @font-face {
     font-family: 'Minecraft 1.1';
-    src: URL('fonts/Minecraft_11.ttf') format('truetype');
+    src: URL('../fonts/Minecraft_11.ttf') format('truetype');
   }
 *{
     font-family: 'Minecraft 1.1';
@@ -13,11 +13,11 @@
 
 
 .dirt{
-    background-image: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ), url(dirt.jpg);
+    background-image: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ), url(../img/dirt.jpg);
     background-repeat: repeat;
 }
 .stone{
-    background-image: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ),  url(stone.png);
+    background-image: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ),  url(../img/stone.png);
     background-repeat: repeat;
 }
 
